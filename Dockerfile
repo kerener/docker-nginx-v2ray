@@ -6,6 +6,7 @@ RUN apk add --no-cache nginx bash \
     && mkdir -p /data
 
 COPY conf /conf
+COPY ./www /data/www
 
 COPY run.sh /run.sh
 RUN chmod 744 /run.sh
