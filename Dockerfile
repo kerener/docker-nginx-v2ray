@@ -10,6 +10,6 @@ COPY conf /conf
 COPY run.sh /run.sh
 RUN chmod 744 /run.sh
 
-EXPOSE 443
+EXPOSE 80
 
 ENTRYPOINT "/run.sh"
